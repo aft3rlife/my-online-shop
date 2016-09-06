@@ -1,0 +1,17 @@
+<div class="col col-33">
+  <div class="card">
+    <div class="card-image">
+      <img class="img-responsive" src="{{ product.image }}" alt="{{ product.name }}">
+    </div><!-- card image -->
+
+    <div class="card-content">
+      <span class="card-title">{{ product.name }}</span>
+      <span class="card-subtitle">${{ product.price }}</span>
+      {{ product.description }}
+    </div><!-- card content -->
+    <div class="card-action">
+      <a href="{{ site.baseurl }}{{ product.url }}">View</a>
+      <a href="#">Purchase</a>
+    </div><!-- card actions -->
+  </div>
+</div>
